@@ -1,3 +1,4 @@
+__author__ = "Jolie, Emma, Pratyush"
 
 def match(pattern, text):
     pattern_row = len(pattern)
