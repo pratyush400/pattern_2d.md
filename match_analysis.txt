@@ -1,0 +1,16 @@
+In terms of m and n, what is the order of the worst case running time for these algorithms? (It's the same for both of them.)
+Worst-case scenario: the nxn sequence doesn’t exist in the mxm matrix
+Time: order m^2n^2
+
+
+How much actual time does it take to run each of the test cases? (PyCharm will give you this information when you run the tests.
+For accurate measurements, you should ideally have nothing else running on your computer when you run the tests.)
+Time it takes to run tests:
+Brute force: 8.078 seconds
+Fingerprint: 5.579 seconds
+
+
+One algorithm performs much better on dense arrays (which are full of random numbers) and the other performs much better on sparse arrays (where almost all of the elements are zero).
+Which is which and how do you explain this behavior?
+The fingerprint algorithm works better on dense arrays because most regions are figured out immediately that there is no match in constant time.
+Brute force works better for sparse arrays because it rejects at the first differing number, making the average time less than m^2 while the fingerprint still recognizes these areas as potential matches.
