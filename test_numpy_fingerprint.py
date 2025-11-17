@@ -22,5 +22,11 @@ T2 = [
     [8,0,1,9],
     [6,7,2,3]
 ]
-print(match(P2,T2))
-assert match(P2,T2) == (1,1)
+
+def test_np_match_1():
+    print(match(P1,T1))
+    assert match(P1,T1) == (1,1)
+
+def test_np_match_2():
+    print(match(P2,T2))
+    assert match(P2,T2) == (1,1)
