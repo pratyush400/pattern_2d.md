@@ -1,3 +1,4 @@
+__author__ = "Jolie, Emma, Pratyush"
 def Verify(P,T,i,j):
     for row in range(len(P)):
         for col in range(len(P)):
@@ -29,5 +30,6 @@ def match(P,T):
             if fp_n == fp_P and  Verify(P,T,i,j+1):  
                 # print(f'Found it at : {(i,j+1)} ')  
                 return(i , j+1)
+
 
 
