@@ -17,9 +17,10 @@ def match(P,T):
         for j in range(len(np_T)-len(np_P)):
             block2 = np_T[i:i + len(np_P), j]
             block3 = np_T[i:i + len(np_P), j + len(np_P)]
-            fp_n = np.bitwise_xor.reduce(block2)
-            fp_n = np.bitwise_xor.reduce(block3)
+            fp_n ^= np.bitwise_xor.reduce(block2)
+            fp_n ^= np.bitwise_xor.reduce(block3)
             if fp_n == fp_P and  Verify(np_P,np_T,i,j+1):  
                 return(i , j+1)
+
 
 
