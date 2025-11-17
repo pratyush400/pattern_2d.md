@@ -7,7 +7,7 @@ How much actual time does it take to run each of the test cases? (PyCharm will g
 For accurate measurements, you should ideally have nothing else running on your computer when you run the tests.)
 Time it takes to run tests:
 Brute force: 8.078 seconds
-Fingerprint: 5.579 seconds
+Fingerprint: 3.015 seconds
 
 
 One algorithm performs much better on dense arrays (which are full of random numbers) and the other performs much better on sparse arrays (where almost all of the elements are zero).
